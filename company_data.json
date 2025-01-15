@@ -1,0 +1,32 @@
+{
+    "current_metrics": {
+        "revenue": 1000000,
+        "growth_rate": 0.15,
+        "market_share": 0.08,
+        "employee_count": 50
+    },
+    "goals": {
+        "target_revenue": 2000000,
+        "target_growth": 0.25,
+        "target_market_share": 0.15
+    },
+    "timeline": {
+        "start_date": "2025-01-01",
+        "end_date": "2025-12-31",
+        "milestones": [
+            {"q1": "Market expansion"},
+            {"q2": "Product launch"},
+            {"q3": "Team scaling"},
+            {"q4": "Partnership development"}
+        ]
+    },
+    "budget": {
+        "total": 500000,
+        "allocation": {
+            "marketing": 0.3,
+            "r_and_d": 0.4,
+            "operations": 0.2,
+            "hiring": 0.1
+        }
+    }
+}
