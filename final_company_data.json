@@ -1,40 +1,48 @@
 {
   "current_metrics": {
     "revenue": 1000000,
-    "growth_rate": 0.15,
-    "market_share": 0.08,
+    "growth_rate": 0.445,
+    "market_share": 0.1,
     "employee_count": 50
+  },
+  "operational_metrics": {
+    "pricing": {
+      "current_price": 100,
+      "price_elasticity": -1.5,
+      "competitor_price": 110
+    },
+    "costs": {
+      "unit_cost": 60,
+      "operational_cost_per_employee": 5000,
+      "marketing_spend": 110000.00000000001,
+      "r_and_d_spend": 216000.0
+    },
+    "workforce": {
+      "total_employees": 69.0,
+      "productivity_per_employee": 20000,
+      "hiring_cost_per_employee": 10000,
+      "departments": {
+        "engineering": 20,
+        "sales": 15,
+        "operations": 10,
+        "support": 5
+      }
+    },
+    "partnerships": {
+      "active_partners": 3,
+      "partner_contribution_to_revenue": 0.15,
+      "partnership_cost": 50000
+    }
   },
   "goals": {
     "target_revenue": 2000000,
     "target_growth": 0.25,
     "target_market_share": 0.15
   },
-  "timeline": {
-    "start_date": "2025-01-01",
-    "end_date": "2025-12-31",
-    "milestones": [
-      {
-        "q1": "Market expansion"
-      },
-      {
-        "q2": "Product launch"
-      },
-      {
-        "q3": "Team scaling"
-      },
-      {
-        "q4": "Partnership development"
-      }
-    ]
-  },
-  "budget": {
-    "total": 500000,
-    "allocation": {
-      "marketing": 0.3,
-      "r_and_d": 0.4,
-      "operations": 0.2,
-      "hiring": 0.1
-    }
+  "market_conditions": {
+    "total_market_size": 12500000,
+    "market_growth_rate": 0.1,
+    "competitor_count": 5,
+    "customer_acquisition_cost": 1000
   }
 }

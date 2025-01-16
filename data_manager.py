@@ -14,10 +14,40 @@ class DataManager:
     def update_metrics(self, agent_name: str, updates: Dict[str, Any]) -> None:
         timestamp = datetime.now().isoformat()
         previous_state = deepcopy(self.current_data)
-        
-        for key, value in updates.items():
-            if key in self.current_data['current_metrics']:
-                self.current_data['current_metrics'][key] = value
+        if 'price_adjustment' in updates:
+            price_change = updates['price_adjustment'] / 100
+            elasticity = self.current_data['operational_metrics']['pricing']['price_elasticity']
+            volume_change = price_change * elasticity
+            revenue_impact = (1 + price_change) * (1 + volume_change) - 1
+            self.current_data['current_metrics']['revenue'] *= (1 + revenue_impact)
+            
+        if 'cost_reduction' in updates:
+            cost_change = updates['cost_reduction'] / 100
+            self.current_data['operational_metrics']['costs']['unit_cost'] *= (1 + cost_change)
+            
+        if 'hiring_change' in updates:
+            hiring_change = updates['hiring_change'] / 100
+            current_employees = self.current_data['operational_metrics']['workforce']['total_employees']
+            new_employees = current_employees * (1 + hiring_change)
+            self.current_data['operational_metrics']['workforce']['total_employees'] = new_employees
+            self.current_data['current_metrics']['growth_rate'] += (hiring_change * 0.5)  # Hiring impacts growth
+            
+        if 'marketing_spend_adjustment' in updates:
+            marketing_change = updates['marketing_spend_adjustment'] / 100
+            self.current_data['operational_metrics']['costs']['marketing_spend'] *= (1 + marketing_change)
+            self.current_data['current_metrics']['market_share'] += (marketing_change * 0.2)  # Marketing impacts market share
+            
+        if 'partnership_expansion' in updates:
+            partnership_change = updates['partnership_expansion'] / 100
+            current_partners = self.current_data['operational_metrics']['partnerships']['active_partners']
+            new_partners = current_partners * (1 + partnership_change)
+            self.current_data['operational_metrics']['partnerships']['active_partners'] = new_partners
+            self.current_data['current_metrics']['market_share'] += (partnership_change * 0.3)  # partnerships impact market share
+            
+        if 'r_and_d_investment_adjustment' in updates:
+            rd_change = updates['r_and_d_investment_adjustment'] / 100
+            self.current_data['operational_metrics']['costs']['r_and_d_spend'] *= (1 + rd_change)
+            self.current_data['current_metrics']['growth_rate'] += (rd_change * 0.3)  # r&d impacts growth
         
         change = {
             'timestamp': timestamp,

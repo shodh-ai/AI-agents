@@ -1,0 +1,72 @@
+{
+    "company": {
+        "name": "TechFlow Solutions",
+        "founded": "2020",
+        "headquarters": "San Francisco, CA",
+        "description": "A SaaS company specializing in AI-powered workflow automation and business intelligence tools"
+    },
+    "products": {
+        "FlowAI": {
+            "description": "Flagship product - AI-powered workflow automation platform",
+            "users": 50000,
+            "pricing_tier": ["Basic", "Pro", "Enterprise"],
+            "market_position": "Leader in SMB segment"
+        },
+        "DataSense": {
+            "description": "Business intelligence and analytics dashboard",
+            "users": 30000,
+            "pricing_tier": ["Starter", "Business", "Enterprise"],
+            "market_position": "Growing in enterprise segment"
+        },
+        "IntegrateHub": {
+            "description": "Integration platform connecting various business tools",
+            "users": 20000,
+            "pricing_tier": ["Free", "Team", "Business"],
+            "market_position": "New entrant with rapid growth"
+        }
+    },
+    "market": {
+        "total_addressable_market": "15B USD",
+        "current_segments": {
+            "small_business": "40%",
+            "mid_market": "35%",
+            "enterprise": "25%"
+        },
+        "geographical_presence": {
+            "north_america": "60%",
+            "europe": "25%",
+            "asia_pacific": "15%"
+        },
+        "competitors": {
+            "enterprise": ["BigTech Corp", "EnterpriseFlow"],
+            "mid_market": ["WorkflowPro", "AutomatePro"],
+            "startup": ["QuickFlow", "SmartWork"]
+        }
+    },
+    "team": {
+        "total_employees": 50,
+        "distribution": {
+            "engineering": "40%",
+            "sales": "30%",
+            "customer_success": "20%",
+            "operations": "10%"
+        },
+        "key_metrics": {
+            "employee_satisfaction": 4.2,
+            "retention_rate": "85%",
+            "productivity_score": 8.5
+        }
+    },
+    "growth_channels": {
+        "primary": {
+            "product_led_growth": "45%",
+            "direct_sales": "30%",
+            "partnerships": "25%"
+        },
+        "customer_acquisition": {
+            "organic": "40%",
+            "paid": "35%",
+            "referral": "25%"
+        }
+    }
+}
