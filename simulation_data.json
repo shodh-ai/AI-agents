@@ -1,0 +1,181 @@
+{
+    "ceo_execution_plan": {
+        "quarterly_objectives": {
+            "revenue_target": 1500000,
+            "growth_target": 0.20,
+            "market_share_target": 0.12,
+            "key_initiatives": [
+                "Launch mobile app version",
+                "Expand sales team",
+                "Optimize customer acquisition cost"
+            ],
+            "resource_allocation": {
+                "marketing_budget": 200000,
+                "r_and_d_budget": 300000,
+                "hiring_budget": 150000
+            },
+            "timeline_milestones": [
+                {
+                    "week": 1,
+                    "milestone": "Complete product roadmap",
+                    "department": "Product"
+                },
+                {
+                    "week": 2,
+                    "milestone": "Finalize hiring plan",
+                    "department": "HR"
+                },
+                {
+                    "week": 3,
+                    "milestone": "Launch marketing campaign",
+                    "department": "Marketing"
+                },
+                {
+                    "week": 4,
+                    "milestone": "Review sales performance",
+                    "department": "Sales"
+                }
+            ]
+        }
+    },
+    "weekly_challenges": {
+        "week1": {
+            "department": "Product",
+            "situation": "The mobile app development is behind schedule. QA found critical bugs that need immediate attention.",
+            "available_resources": {
+                "developers": 5,
+                "qa_engineers": 2,
+                "emergency_budget": 20000
+            },
+            "constraints": {
+                "timeline": "Must launch within 2 weeks",
+                "budget_cap": 30000,
+                "team_availability": "2 developers on vacation"
+            },
+            "possible_approaches": [
+                "Hire contractors",
+                "Postpone other projects",
+                "Reduce feature scope"
+            ],
+            "unexpected_events": [
+                {
+                    "trigger": "hire_contractors",
+                    "event": "Contractors require 1 week for onboarding",
+                    "impact": {
+                        "budget": -10000,
+                        "timeline": "+1 week"
+                    }
+                }
+            ]
+        },
+        "week2": {
+            "department": "HR",
+            "situation": "High turnover in the sales team is affecting performance. Need to improve retention and hiring.",
+            "available_resources": {
+                "hiring_budget": 50000,
+                "hr_team": 3,
+                "training_budget": 25000
+            },
+            "constraints": {
+                "time_to_hire": "2 weeks maximum",
+                "salary_band": "Market rate ±10%",
+                "training_capacity": "10 people per session"
+            },
+            "possible_approaches": [
+                "Revise compensation",
+                "Implement mentorship",
+                "Improve benefits"
+            ],
+            "unexpected_events": [
+                {
+                    "trigger": "compensation",
+                    "event": "Competitor matches new compensation package",
+                    "impact": {
+                        "market_share": -0.01,
+                        "costs": "+5%"
+                    }
+                }
+            ]
+        },
+        "week3": {
+            "department": "Marketing",
+            "situation": "New competitor launched aggressive campaign. Market share at risk.",
+            "available_resources": {
+                "marketing_budget": 75000,
+                "social_media_team": 3,
+                "content_creators": 2
+            },
+            "constraints": {
+                "campaign_duration": "3 weeks maximum",
+                "brand_guidelines": "Must maintain premium image",
+                "channel_restrictions": "Digital focus required"
+            },
+            "possible_approaches": [
+                "Launch counter-campaign",
+                "Offer promotional deals",
+                "Focus on differentiation"
+            ],
+            "unexpected_events": [
+                {
+                    "trigger": "promotion",
+                    "event": "Unexpected high response rate strains fulfillment",
+                    "impact": {
+                        "revenue": "+10%",
+                        "costs": "+15%"
+                    }
+                }
+            ]
+        },
+        "week4": {
+            "department": "Sales",
+            "situation": "Sales team struggling to meet targets with new pricing structure.",
+            "available_resources": {
+                "sales_team": 6,
+                "commission_budget": 30000,
+                "lead_generation_tools": 3
+            },
+            "constraints": {
+                "quarterly_target": "500 new customers",
+                "average_deal_size": "Minimum $5000",
+                "sales_cycle": "Maximum 30 days"
+            },
+            "possible_approaches": [
+                "Revise commission structure",
+                "Implement new sales training",
+                "Launch referral program"
+            ],
+            "unexpected_events": [
+                {
+                    "trigger": "referral_program",
+                    "event": "Unexpected high response to referral program",
+                    "impact": {
+                        "revenue": "+3%",
+                        "market_share": 0.02
+                    }
+                }
+            ]
+        }
+    },
+    "agent_personalities": {
+        "CEO": {
+            "style": "Direct and results-oriented",
+            "priorities": ["Revenue growth", "Market expansion", "Operational efficiency"],
+            "risk_tolerance": "Moderate"
+        },
+        "CTO": {
+            "style": "Analytical and innovation-focused",
+            "priorities": ["Technical excellence", "Scalability", "Innovation"],
+            "risk_tolerance": "High for technical decisions"
+        },
+        "Analyst": {
+            "style": "Data-driven and cautious",
+            "priorities": ["Cost efficiency", "Risk management", "Sustainable growth"],
+            "risk_tolerance": "Low"
+        },
+        "Associate": {
+            "style": "Detail-oriented and practical",
+            "priorities": ["Implementation feasibility", "Team workload", "Quality"],
+            "risk_tolerance": "Moderate"
+        }
+    }
+}
